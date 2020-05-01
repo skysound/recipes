@@ -5,23 +5,28 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v1.2.1 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Waves Central and creates a package.</string>
+	<string>Downloads the latest version of iLok License Manager and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.skysound.pkg.WavesCentral</string>
+	<string>com.github.skysound.pkg.iLokLicenseManager</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
-		<string>com.WavesAudio.central</string>
+		<string>com.paceap.eden.iLokLicenseManager</string>
 		<key>NAME</key>
-		<string>Waves Central</string>
+		<string>iLok License Manager</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.skysound.download.WavesCentral</string>
+	<string>com.github.skysound.download.iLokLicenseManager</string>
 	<key>Process</key>
 	<array>
 		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>app_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/iLok License Manager.app</string>
+			</dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
 		</dict>
